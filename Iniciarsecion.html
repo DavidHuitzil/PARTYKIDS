@@ -16,10 +16,10 @@
     <header>
 		<nav class="navegacion">
 			<ul class="menu">
-				<li><a href="C:\Apache24\htdocs\PartKids\index.html">Inicio</a></li>
-				<li><a href="C:\Apache24\htdocs\PartKids\Iniciarsecion.html">Iniciar sesion</a></li>
-				<li><a href="C:\Apache24\htdocs\PartKids\Registrarse.html">registrarse</a><ul class="submenu">
-		        <li><a href="C:\Apache24\htdocs\PartKids\RegistraAdmin.html">Empleado</a></li>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Iniciarsecion.html">Iniciar sesion</a></li>
+				<li><a href="Registrarse.html">registrarse</a><ul class="submenu">
+		        <li><a href="RegistraAdmin.html">Empleado</a></li>
 				</ul></li>
 				<li><a href="#">Calendario</a>
 					<ul class="submenu">
@@ -33,7 +33,7 @@
 			</ul>
 		</nav>
     </header>
-    <form class="formulario">
+    <form class="formulario" rol="php/validar.php" method="post">
     
     <h1>Login</h1>
      <div class="contenedor">
@@ -42,18 +42,18 @@
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
+         <input type="text" name="correo " placeholder="Correo Electronico" required>
          
          </div>
          
          <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
+         <input type="password" name="contraseña" placeholder="Contraseña" required>
          
          </div>
          <input type="submit" value="Login" class="button">
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿No tienes una cuenta? <a class="link" href="C:\Apache24\htdocs\PartKids\Registrarse.html">Registrate </a></p>
+         <p>¿No tienes una cuenta? <a class="link" href="Registrarse.html">Registrate </a></p>
      </div>
     </form>
 </body>
